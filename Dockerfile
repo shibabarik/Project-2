@@ -9,4 +9,3 @@ RUN unzip photoprowess.zip
 RUN cp -rvf photoprowess/* .
 RUN rm -rf photoprowess photoprowess.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
