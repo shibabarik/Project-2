@@ -10,8 +10,8 @@ RUN yum install -y httpd \
   unzip
 ADD  https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip /var/www/html
 WORKDIR /var/www/html
-RUN unzip photoprowess.zip
-RUN cp -rvf photoprowess/* .
-RUN rm -rf photoprowess photoprowess.zip
+RUN unzip oxer.zip
+RUN cp -rvf oxer/* .
+RUN rm -rf oxer oxer.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
