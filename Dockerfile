@@ -14,4 +14,4 @@ RUN unzip oxer.zip
 RUN cp -rvf oxer-html/* .
 RUN rm -rf oxer-html oxer.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 81
