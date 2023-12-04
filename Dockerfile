@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM ubuntu:latest
 MAINTAINER b.shibabarik@gmail.com
 
 RUN apt-get update -y
